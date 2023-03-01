@@ -1,0 +1,10 @@
+/* Styles for header - only click :) */
+.accordion {
+  cursor: pointer;
+}
+
+/* Style the accordion panel */
+.accordion-panel {
+  overflow: hidden;
+  transition: max-height var(--accordion-transition-speed) ease-out;
+}

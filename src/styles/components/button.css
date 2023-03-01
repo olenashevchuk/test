@@ -1,0 +1,97 @@
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  gap: var(--btn-default-gap);
+  font-weight: var(--btn-default-font-weight);
+  letter-spacing: var(--btn-default-letter-spacing);
+  font-style: var(--btn-default-font-style);
+  font-family: var(--btn-default-font-family);
+  border-radius: var(--btn-default-border-radius);
+}
+
+.btn-md {
+  font-size: var(--btn-md-font-size);
+  line-height: var(--btn-md-line-height);
+  padding: var(--btn-md-padding);
+  gap: var(--btn-md-gap);
+}
+.btn-sm{
+  font-size: var(--btn-sm-font-size);
+  line-height: var(--btn-sm-line-height);
+  padding: var(--btn-sm-padding);
+  gap: var(--btn-sm-gap);
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-default-bg);
+  color: var(--color-light);
+}
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--color-light);
+}
+.btn-secondary:hover {
+  background-color: var(--action-secondary-bg-hover);
+}
+
+.btn-transparent {
+  background-color:var(--btn-transparent-bg);
+  color: var(--color-secondary);
+}
+.btn-transparent:hover {
+  background-color: var(--btn-transparent-hover-bg);
+  color: var(--color-transparent)
+}
+.btn-transparent:hover i {
+  background-color: var(--btn-transparent-hover-bg);
+}
+
+.btn-primary i{
+  background-color: var(--btn-primary-default-bg);
+  color: var(--color-light);
+}
+.btn-primary:hover {
+  background-color: var(--btn-primary-default-hover-bg);
+}
+.btn-primary:hover i {
+  background-color: var(--btn-primary-default-hover-bg);
+}
+
+.btn-vipps {
+  background-color: var(--btn-vips-bg);
+  color: var(--btn-vips-color);
+}
+.btn-vipps i {
+  background-color: var(--btn-vips-bg);
+  color: var(--btn-vips-color);
+}
+
+.btn-vipps:hover {
+  background-color: var(--btn-vips-hover-bg);
+}
+
+.btn-vipps:hover i{
+  background-color: var(--btn-vips-hover-bg);
+}
+
+.btn-icon-left * {
+  order:2;
+}
+
+.btn-icon-left i{
+  order:1;
+}
+
+.button-disabled {
+  color: var(--btn-disabled-color);
+  cursor: default !important;
+  background-color: var(--btn-disabled-bg);
+}
+.button-disabled:hover {
+  background-color: var(--btn-disabled-bg);
+  color: var(--btn-disabled-color);
+}

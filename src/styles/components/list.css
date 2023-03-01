@@ -1,0 +1,61 @@
+
+.list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: var(--list-default-gap);
+}
+/* Temporary dont use this */
+/* .list .card:first-child{
+  border-top-left-radius: var(--list-firstLast-child-border-radius) !important;
+  border-top-right-radius: var(--list-firstLast-child-border-radius)!important;
+}
+.list .card:last-child{
+  border-bottom-left-radius: var(--list-firstLast-child-border-radius)!important;
+  border-bottom-right-radius: var(--list-firstLast-child-border-radius)!important;
+
+} */
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.list-row{
+  flex-direction: row;
+  height:unset;
+}
+::webkit-scrollbar {
+
+  display: none;
+}
+.list-gap-small {
+  gap: var(--list-gap-small);
+}
+.list-gap-default {
+  gap: var(--list-gap-default);
+}
+.list-gap-medium {
+  gap: var(--list-gap-medium);
+}
+.list-gap-large {
+  gap: var(--list-gap-large);
+}
+.list-gap-huge {
+  gap: var(--list-gap-huge)
+}
+
+.list-squared{
+  border-radius: var(--list-border-radius-none); 
+}
+.list-roundedsm{
+  border-radius: var(--list-border-radius-small);
+}
+.list-roundedmd{
+  border-radius: var(--list-border-radius-default);
+}
+.list-roundedlg{
+  border-radius: var(--list-border-radius-large);
+}
+

@@ -1,0 +1,98 @@
+.card {
+  background: var(--card-default-bg);
+  box-shadow: var(--card-box-shadow);
+  padding: var(--card-default-padding);
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+  border-radius: var(--card-border-radius);
+}
+.card-direction-row{
+  flex-direction: row;
+}
+.card-direction-column{
+  flex-direction: column;
+}
+.card::-webkit-scrollbar {
+  display: none;
+}
+.card-primary {
+  background: var(--card-primary-bg);
+}
+.card-secondary {
+  background: var(--card-secondary-bg);
+}
+
+.card-selected {
+  background: var(--card-selected-bg);
+}
+.card-transparent{
+  background: transparent;
+}
+
+.card-squared{
+  border-radius: var(--card-border-radius-none); 
+}
+.card-roundedsm{
+  border-radius: var(--card-border-radius-small);
+}
+.card-roundedmd{
+  border-radius: var(--card-border-radius-default);
+}
+.card-roundedlg{
+  border-radius: var(--card-border-radius-large);
+}
+
+.card-gap-small {
+  gap: var(--list-gap-small);
+}
+.card-gap-default {
+  gap: var(--list-gap-default);
+}
+.card-gap-medium {
+  gap: var(--list-gap-medium);
+}
+.card-gap-large {
+  gap: var(--list-gap-large);
+}
+.card-gap-huge {
+  gap: var(--list-gap-huge)
+}
+
+.card-popover {
+  width: -webkit-fill-available;
+  width: fill-available;
+  border-bottom-left-radius: var(--br-none);
+  border-bottom-right-radius: var(--br-none);
+}
+.card-cursor-default {
+  cursor: default;
+}
+.card-cursor-pointer {
+  cursor: pointer;
+}
+.card-cursor-disabled {
+  cursor: disabled;
+}
+
+.card-border-radius-extra-small{
+  border-radius: var(--card-border-radius-extra-small)
+}
+.card-border-radius-small{
+    border-radius: var(--card-border-radius-small)
+}
+.card-border-radius-default{
+    border-radius: var(--card-border-radius-default)
+}
+.card-border-radius-large{
+    border-radius: var(--card-border-radius-large)
+}
+.card-border-radius-circle{
+    border-radius: var(--card-border-radius-circle)
+}
+.card-no-data{
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  }

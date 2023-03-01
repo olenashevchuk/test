@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600&family=Open+Sans:wght@400;600&display=swap");
+@import url(./vars.css);
+@import url(./components/button.css);
+@import url(./components/spinner.css);
+@import url(./components/skeleton.css);
+@import url(./components/card.css);
+@import url(./components/input.css);
+@import url(./components/list.css);
+@import url(./components/accordion.css);
+@import url(./components/switcher.css);
+@import url(./components/radioBtn.css);
+@import url(./components/avatar.css);
+@import url(./components/calendar.css);
+@import url(./components/divider.css);
+@import url(./helpers.css);
+@import url(./typography.css);
+
+@import url("react-phone-input-2/lib/bootstrap.css");
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: var(--bg-default); */
+  background: var(--default-body-background-color);
+  /* background: rgb(240, 231, 233); */
+  /* background: rgb(229, 229, 229); */
+}
+::-webkit-scrollbar {
+  display: none;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-panel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.switcher-block-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky {
+  position: fixed;
+  /* top: 0; */
+  /* width: 100%; */
+}
+.inherit {
+  position: inherit;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.hidden {
+  opacity: 0;
+  height: 0;
+  margin: 0 !important;
+  transition: opacity var(--transition-default) ease-out,
+    height var(--transition-default) ease var(--transition-slow);
+}
+
+.dent-in-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.dent-in-widget__container {
+  width: 360px;
+  height: 760px;
+  max-width: calc(100% - 4rem);
+  max-height: calc(100% - 8rem);
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  background: var(--default-body-background-color);
+  border-radius: var(--widget-container-border-radius);
+  box-shadow: var(--widget-container-box-shadow);
+  z-index: 1;
+}
+
+.dent-in-widget__container.bottom-left {
+  position: fixed;
+  left: 2rem;
+  bottom: 6rem;
+}
+
+.dent-in-widget__container.bottom-right {
+  position: fixed;
+  right: 2rem;
+  bottom: 6rem;
+}
+.dent-in-widget__container.top-right {
+  position: fixed;
+  right: 2rem;
+  top: 6rem;
+}
+.dent-in-widget__container.top-left {
+  position: fixed;
+  left: 2rem;
+  top: 6rem;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.top-right {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+.top-left {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+}
+
+.inline {
+  position: relative;
+}
+
+.dent-in__button {
+  border-radius: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 24px;
+  padding: 12px 32px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 0px;
+  position: relative;
+}
+.button-sm {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 8px 16px;
+}
+.button-md {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 32px;
+}
+.button-lg {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 32px;
+}
+
+.widget-hide-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--widget-hide-button-background-color);
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.glowing-effect {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+.react-tel-input .selected-flag {
+  padding-left: var(--p-md);
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+  50% {
+    background-color: var(--glowingColor-fused);
+    -webkit-box-shadow: 0 0 40px var(--glowingColor-fused);
+  }
+  100% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+  50% {
+    background-color: var(--glowingColor-fused);
+    -webkit-box-shadow: 0 0 40px var(--glowingColor-fused);
+  }
+  100% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+  50% {
+    background-color: var(--glowingColor-fused);
+    -webkit-box-shadow: 0 0 40px var(--glowingColor-fused);
+  }
+  100% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+  50% {
+    background-color: var(--glowingColor-fused);
+    -webkit-box-shadow: 0 0 40px var(--glowingColor-fused);
+  }
+  100% {
+    background-color: var(--glowingColor);
+    -webkit-box-shadow: 0 0 3px var(--glowingColor);
+  }
+}
+
+

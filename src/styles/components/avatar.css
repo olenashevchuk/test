@@ -1,0 +1,15 @@
+.avatar{
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.avatar-sm{
+  width: 32px;
+  height: 32px;
+}
+.avatar-md{
+  width: 68px;
+  height: 68px;
+}
+.avatar-default-bg{
+  background-color: var(--grey-lighten3);
+}

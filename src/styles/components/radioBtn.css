@@ -1,0 +1,37 @@
+.radio-btn-wrapper:first-child {
+  margin-left: var(--gap-large);
+}
+.radio-btn-wrapper:last-child {
+  margin-right: var(--gap-large);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-btn-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding:var(--radio-btn-default-paddings);
+  height: var(--radio-btn-default-height);
+  background: var(--radio-btn-default-bg);
+  border-radius: var(--br-default);
+  cursor: pointer;
+  text-align: center;
+  box-shadow: var(--radio-btn-boxShadow);
+  font-family: var(--radio-btn-default-font-family);
+  font-style: var(--radio-btn-default-font-style);
+  font-weight: var(--radio-btn-default-font-weight);
+  font-size: var(--radio-btn-default-font-size);
+  line-height: var(--radio-btn-default-line-height);
+  color: var(--radio-btn-default-color);
+}
+input[type="radio"]:checked + label {
+  background: var(--radio-btn-checked-bg);
+  color: var(--radio-btn-checked-color);
+  font-weight: var(--radio-btn-checked-font-weight);
+  font-size: var(--radio-btn-checked-font-size);
+  line-height: var(--radio-btn-default-line-height);
+}

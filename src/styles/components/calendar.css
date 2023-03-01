@@ -1,0 +1,66 @@
+.calendar {
+  display: flex;
+  overflow-x: scroll;
+  gap: var(--gap-default);
+}
+.calendar::-webkit-scrollbar{
+  display: none;
+}
+
+.calendar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--calendar-item-default-bg);
+  cursor: pointer;
+  transition: background-color var(--calendar-item-transactions-speed);
+}
+
+.calendar > .calendar-item:first-child {
+  margin-left: var(--gap-large);
+}
+.calendar-item:last-child {
+  margin-right: var(--gap-large);
+}
+
+.calendar-item-sm {
+  width: var(--calendar-item-sm-width);
+  height: var(--calendar-item-sm-height);
+  min-width: var(--calendar-item-sm-width);
+  min-height: var(--calendar-item-sm-height);
+}
+.calendar-item-lg {
+  width: var(--calendar-item-lg-width);
+  height: var(--calendar-item-lg-height);
+  min-width: var(--calendar-item-lg-width);
+  min-height: var(--calendar-item-lg-height);
+}
+
+.calendar-item-primary{
+  background-color: var(--calendar-item-primary-bg);
+}
+
+.weekend {
+  color: var(--canedarItem-weekend-color);
+}
+
+.calendar-item-selected {
+  background-color: var(--calendar-item-selected-bg);
+  color: var(--calendar-item-selected-color);
+}
+.calendar-item-disabled {
+  color: var(--grey-lightning1);
+  transform: scale(0.9);
+  cursor: default !important;
+}
+.calendar-item-cursor-default {
+  cursor: default;
+}
+.calendar-item-cursor-pointer {
+  cursor: pointer;
+}
+.calendar-item-cursor-disabled {
+  cursor: disabled;
+}

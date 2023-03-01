@@ -1,0 +1,309 @@
+:host {
+  /* TYPOGRAPHY */
+  /* Font sizes */
+  --fs-h1: 32px;
+  --fs-h4: 24px;
+  --fs-h6: 16px;
+  --fs-body1: 16px;
+  --fs-body2: 14px;
+  --fs-caption1: 12px;
+  --fs-caption2: 10px;
+
+  /* Line heights */
+  --lh-h1: 48px;
+  --lh-h4: 36px;
+  --lh-h6: 24px;
+  --lh-body1: 24px;
+  --lh-body2: 20px;
+  --lh-caption1: 16px;
+  --lh-caption2: 14px;
+
+  /* Font weights */
+  --fw-title: 600;
+  --fw-body: 400;
+
+  /* Font families */
+  --ff-title: "MuseoModerno", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+
+  /* Font style */
+  --fst-default: "normal";
+
+  /* Letter spacing */
+  --ls-default: 0.6;
+
+  /* COLORS */
+  --primary-default: #5cadbd;
+  --primary-lighten1: #3dc4de;
+  --dark-default: #000000;
+  --black: #000000;
+  --white: #ffffff;
+  --white-t1: rgba(255, 255, 255, 0.9); /* t - means transparent */
+  --white-t2: rgba(255, 255, 255, 0.6);
+  --white-t3: rgba(255, 255, 255, 0.1);
+  --vipps-default: #ff7900;
+  --vips-lighten1: #fca04f;
+  --grey-default: #3d3d3d;
+  --grey-lighten1: #828282;
+  --grey-lighten2: #bdbdbd;
+  --grey-lighten3: #e0e0e0;
+  --grey-lighten4: #e9e9e9;
+  --grey-lightning1: rgb(61, 61, 61, 0.8);
+  --grey-lightning2: rgb(61, 61, 61, 0.6);
+  --grey-lightning3: rgb(61, 61, 61, 0.4);
+  --grey-lightning4: rgb(61, 61, 61, 0.2);
+  
+  --light-default: rgb(237, 239, 241);
+  --light-lighten1: rgb(242, 244, 245);
+  --light-lighten1-t1: rgba(242, 244, 245, 0.8);
+  --default-box-shadow-color: rgba(0, 0, 0, 0.04);
+  --default-box-shadow-color-darken1: rgba(0, 0, 0, 0.2);
+  --default-box-shadow: 0px 7px 18px -16px var(--default-box-shadow-color);
+  --default-box-shadow-darken1: 0px 7px 18px 0px var(--default-box-shadow-color-darken1);
+  --default-box-shadow-bottom-darken1: 0 30px 22px -30px var(--default-box-shadow-color);
+  --default-box-shadow-darken2: 0px 1px 3px var(--default-box-shadow-color-darken1);
+
+  --default-body-background-color: var(--light-default);
+
+  /* Spacing */
+  --padding-x-md: 12px;
+  --padding-y-md: 16px;
+  --padding-x-sm: 6px;
+  --padding-y-sm: 10px;
+  --gap-small: 4px;
+  --gap-default: 8px;
+  --gap-medium: 12px;
+  --gap-large: 16px;
+  --gap-huge: 32px;
+
+  /* Margin */
+  --m-reset: 0;
+  --m-xs: 8px;
+  --m-sm: 16px;
+  --m-md: 20px;
+  --m-lg: 32px;
+  --m-xl: 42px;
+
+  /* Padding */
+  --p-reset: 0;
+  --p-xs: 8px;
+  --p-sm: 16px;
+  --p-md: 20px;
+  --p-lg: 32px;
+  --p-xl: 42px;
+
+  /* Border-radius */
+  --br-none: 0;
+  --br-extra-small: 4px;
+  --br-small: 16px;
+  --br-default: 32px;
+  --br-large: 64px;
+  --br-circle: 50%;
+
+  /* Transition speed */
+  --transition-default: 0.4s;
+  --transition-slow: 0.6s;
+
+  /* Widget container */
+  --widget-container-border-radius: var(--br-default);
+  --widget-container-box-shadow: var(--default-box-shadow-darken1);
+
+  /* Button styling */
+  --btn-default-letter-spacing: var(--ls-default);
+  --btn-default-font-weight: var(--fw-title);
+  --btn-default-font-style: var(--fst-default);
+  --btn-default-font-family: var(--ff-body);
+  --btn-default-gap: var(--gap-small);
+  --btn-default-border-radius: var(--br-default);
+
+  /* button  - md size */
+  --btn-md-font-size: var(--fs-body1);
+  --btn-md-line-height: var(--lh-body1);
+  --btn-md-padding: var(--padding-x-md) var(--padding-y-md);
+  --btn-md-gap: var(--gap-small);
+
+  /* button  - sm size */
+  --btn-sm-font-size: var(--fs-capture1);
+  --btn-sm-line-height: var(--lh-capture1);
+  --btn-sm-padding: var(--padding-x-sm) var(--padding-y-sm);
+  --btn-sm-gap: var(--gap-small);
+
+  /* Card styling */
+  --card-default-padding: 16px;
+  --card-default-br: var(--br-none);
+  --card-popover-br: var(--br-large);
+  --card-wrapper-br: var(--br-default);
+
+  /* List styling */
+  --list-default-gap: var(--gap-default);
+  --list-firstLast-child-border-radius: var(--br-default);
+  --list-gap-small: 4px;
+  --list-gap-default: 8px;
+  --list-gap-medium: 12px;
+  --list-gap-large: 16px;
+  --list-gap-huge: 32px;
+
+  /* Accordion */
+  --accordion-transition-speed: var(--transition-default);
+
+  /* Switcher */
+  --switcher-transition-speed: var(--transition-default);
+
+  /* Radio button */
+  --radio-btn-default-font-family: var(--ff-body);
+  --radio-btn-default-font-size: var(--fs-body2);
+  --radio-btn-default-line-height: var(--lh-body2);
+  --radio-btn-default-font-weight: var(--fw-body);
+  --radio-btn-default-font-style: var(--fst-default);
+  --radio-btn-default-letter-spacing: var(--ls-default);
+  --radio-btn-default-padding: var(--padding-y-md);
+
+  --radio-btn-checked-font-size: var(--fs-body2);
+  --radio-btn-checked-font-weight: var(--fw-title);
+  --radio-btn-default-line-height: var(--lh-body2);
+  --radio-btn-default-width: 122px;
+  --radio-btn-default-height: 48px;
+
+  --radio-btn-default-paddings: 8px 16px;
+
+
+  /* Calendar item */
+  --calendar-item-sm-width: 40px;
+  --calendar-item-sm-height: 78px;
+  --calendar-item-lg-width: 68px;
+  --calendar-item-lg-height: 68px;
+
+  /* Input item */
+  --input-font-size: var(--fs-body1);
+  --input-line-height: var(--lh-body1);
+  --input-font-weight: var(--fw-title);
+  --input-font-family: var(--ff-body);
+  --input-font-style: var(--fst-default);
+  --input-letter-spacing: var(--ls-default);
+  --input-border-radius: var(--br-default);
+  
+  --input-placeholder-color: var(--grey-lightning2);
+  --input-placeholder-font-size: var(--fs-body1);
+  --input-placeholder-line-height: var(--lh-body1);
+  --input-padding: var(--p-reset) var(--p-md) ;  
+  
+   /* Phone input library  overwrite*/
+   --phoneInputCustomPaddings: var(--p-reset) calc(var(--p-md) * 2.5);
+
+  /* Divider */
+  --divider-border-width: 0 0 1px 0;
+
+  /* THEME */
+  /* Backgrounds */
+  --bg-primary: var(--light-default);
+  --bg-secondary: var(--light-lighten1);
+  --bg-tertiary: var(--light-lighten1-t1);
+  --bg-quaternary: var(--white-t1);
+
+  /* Body */
+  --bg-default: linear-gradient(
+    180deg,
+    var(--light-lighten1),
+    var(--light-default)
+  );
+
+  /* Typography */
+  --color-primary: var(--dark-default);
+  --color-secondary: var(--grey-default);
+  --color-tertiary: var(--grey-lightning1);
+  --color-light: var(--white);
+
+  /* Actions */
+  --action-primary-bg: var(--primary-default);
+  --action-primary-bg-hover: var(--primary-lighten1);
+  --action-primary-color: var(--color-light);
+  --action-secondary-bg: var(--white-t2);
+  --action-secondary-bg-hover: var(--grey-lighten1);
+  --action-disabled-color: var(--white-t3);
+  --action-disabled-bg: var(--grey-lighten4);
+  --action-vips-bg: var(--vipps-default);
+  --action-vips-bg-hover: var(--vips-lighten1);
+  --action-vips-color: var(--color-light);
+
+  --action-transparent-bg: var(--vipps-default);
+  --action-transparent-bg-hover: var(--bg-secondary);
+  --action-transparent-color: var(--color-light);
+  /* Button */
+  --btn-primary-default-bg: var(--action-primary-bg);
+  --btn-primary-default-hover-bg: var(--action-primary-bg-hover);
+  --btn-primary-default-color: var(--action-primary-color);
+
+  --btn-vips-bg: var(--action-vips-bg);
+  --btn-vips-hover-bg: var(--action-vips-bg-hover);
+  --btn-vips-color: var(--action-vips-color);
+
+  --btn-secondary-bg: var(--grey-lighten2);
+  --btn-secondary-hover-bg: var(--action-secondary-bg-hover);
+  --btn-secondary-color: var(--action-secondary-color);
+
+  --btn-transparent-bg: var(--bg-primary);
+  --btn-transparent-hover-bg: var(--action-transparent-bg-hover);
+  --btn-transparent-color: var(--action-transparent-color);
+
+  --btn-disabled-bg: var(--action-disabled-bg);
+  --btn-disabled-color: var(--grey-lightning1);
+
+
+  /* Card */
+  --card-default-bg: var(--light-lighten1-t1);
+  --card-primary-bg: var(--light-lighten1-t1);
+  --card-secondary-bg: var(--white-t2);
+  --card-selected-bg: var(--white-t1);
+  --card-border-radius-none: var(--br-none);
+  --card-border-radius: var(--br-default);
+  --card-border-radius-extra-small: var(--br-extra-small);
+  --card-border-radius-small: var(--br-small);
+  --card-border-radius-default: var(--br-default);
+  --card-border-radius-large: var(--br-large);
+
+  /* List */
+  --list-border-radius-none: var(--br-none);
+  --list-border-radius: var(--br-default);
+  --list-border-radius-extra-small: var(--br-extra-small);
+  --list-border-radius-small: var(--br-small);
+  --list-border-radius-default: var(--br-default);
+  --list-border-radius-large: var(--br-large);
+  
+  /* Switcher */
+  --switcher-input-bg: var(--white);
+  --switcher-checked-bg: var(--primary-default);
+  --switcher-not-checked-bg: var(--light-lighten1);
+  --switcher-box-shadow: rgba(0, 0, 0, 0.15);
+
+  /* Radio button */
+  --radio-btn-default-bg: var(--white-t3);
+  --radio-btn-boxShadow: 0px 0px 10px var(--default-box-shadow-color);
+  --radio-btn-checked-bg: var(--white-t1);
+  --radio-btn-default-color: var(--grey-default);
+  --radio-btn-checked-color: var(--black);
+
+  /* Calendar item */
+  --calendar-item-default-bg: transparent;
+  --calendar-item-primary-bg: var(--primary-default);
+  --calendar-item-selected-bg: var(--primary-default);
+  --calendar-item-transactions-speed: 0.4s;
+  --calendarItem-weekend-color: var(--grey-lightning1);
+  --calendar-item-selected-color: var(--action-primary-color);
+
+  --calendar-item-disabled-bg: transparent;
+  --calendar-item-disabled-color: var(--action-disabled-color);
+
+  /* Spinner */
+  --spinner-bg: var(--primary-default);
+  --spinner-shadow-bg: var(--grey-lightning4);
+
+
+   /* Input */
+   --input-background: var(--white);
+
+   /* Divider */
+    --divider-color: var(--grey-lightning3);
+    --divider-bg: var(--default-body-background-color);
+}
+
+

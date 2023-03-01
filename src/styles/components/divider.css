@@ -1,0 +1,34 @@
+.divider{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content:center
+}
+
+.divider .divider-label{
+  color: var(--divider-color);
+  display:inline-block;
+  position: relative;
+  padding-left:10px;
+  padding-right: 10px;
+  display: flex;
+  white-space: nowrap;
+}
+
+.divider:before{
+  position: relative;
+  width: 50%;
+  border-top: 1px solid var(--divider-color);
+  border-bottom: 0;
+  transform: translateY(50%);
+  content: "";
+}
+.divider:after{
+  position: relative;
+  width: 50%;
+  border-top: 1px solid var(--divider-color);
+  border-bottom: 0;
+  transform: translateY(50%);
+  content: "";
+}
